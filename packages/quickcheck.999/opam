@@ -1,0 +1,11 @@
+opam-version: "1"
+maintainer: "nicolas@incubaid.com"
+build: [
+  ["./configure"]
+  ["%{make}%"]
+  ["%{make}%" "install"]
+]
+remove: [
+  ["ocamlfind" "remove" "quickcheck"]
+]
+depends: ["ocamlfind"]
