@@ -1,8 +1,8 @@
 opam-version: "1"
 maintainer: "romain.slootmaekers@incubaid.com"
 build: [
-  ["%{make}%" "-c" "src"]
-  ["%{make}%" "-c" "src" "install"]
+  ["%{make}%" "-C" "src"]
+  ["%{make}%" "-C" "src" "install"]
 ]
 remove: [
   ["ocamlfind" "remove" "camltc"]
