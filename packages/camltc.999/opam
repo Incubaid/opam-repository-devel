@@ -7,4 +7,4 @@ build: [
 remove: [
   ["ocamlfind" "remove" "camltc"]
 ]
-depends: ["ocamlfind" "ounit" ]
+depends: ["ocamlfind" "ounit" "lwt"]
