@@ -1,8 +1,6 @@
 opam-version: "1"
 maintainer: "romain.slootmaekers@incubaid.com"
 build: [
-  ["git" "checkout" "camltc-0.9.2"]      
-  ["git" "submodule" "update" "--init"]
   ["%{make}%" "-C" "src"]
   ["%{make}%" "-C" "src" "install"]
 ]
